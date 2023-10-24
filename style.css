@@ -1,0 +1,22 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe {
+  background-color: verde;
+  color: blanco;
+}
+
+.success-message {
+  background-color: gris;
+  padding: 10px;
+}
+
+.dismiss-message {
+  background-color: blanco;
+  color: negro;
+}
