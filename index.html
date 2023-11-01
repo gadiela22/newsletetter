@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-<link rel="stylesheet" href="style.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,30 +15,60 @@
 </head>
 <body>
 
-  <!-- Sign-up form start -->
-<div>
-  <H1>Stay updated!</H1>
-
-  Join 60,000+ product managers receiving monthly 
-  updates on:
-</div>
-<p><img src="images.png/palomita  " alt="Imagen"> IMProduct discovery and building what matters</p>
-<p><img src="images.png/palomita  " alt="Imagen">Measuring to ensure updates are a success</p>
-<p><img src="images.png/palomita  " alt="Imagen">And much more!</p>
-
-<div> 
-   <h5>Email address</h5> 
-    <input type="email" name="email" value="email@company.com">
-    
-
-</div>
-  <button class="dismiss-message">  Subscribe to monthly newsletter</button>
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+ 
+<div class="general">
+ 
+  <div class="inicial">
+    <img src="assets/images/illustration-sign-up-mobile.svg" class="laptop-mobile" alt="" >
   </div>
+  
+  <div class="contenido">
+    
+    <div class="title">
+    <h1>
+      Stay updated!
+    </h1>
+  </div>
+  
+  <p class="container">
+    Join 60,000+ product managers receiving monthly updates on:
+    </p>
+    
+    <ul class="lista">
+      <li>
+        <img src="assets/images/icon-success.svg" alt="">
+       <span>Product discovery and building what matters</span> 
+      </li>
+
+      <li>
+        <img src="assets/images/icon-success.svg" alt="">
+        <span>Measuring to ensure updates are a success</span>
+      </li>
+      
+      <li>
+        <img src="assets/images/icon-success.svg" alt="">
+       <span> And much more!</span>
+      </li>
+      
+    </ul>
+    
+    <form action="" id="frm">
+      <label for="InputCorreo" class="nombreInput">
+        Email address <span class="msgerror error" id="msgerror"></span>
+      </label>
+      
+      <br>
+      <input type="email" name="InputCorreo" placeholder="email@company.com" class="InputCorreo" id="email"> 
+      
+     <br>
+     <button class="BtnEntrar" id="registrar"> 
+        Subscribe to monthly newsletter
+     </button>
+    </form>
+  
+</div>
+</div>  
+
+</div>
 </body>
 </html>
